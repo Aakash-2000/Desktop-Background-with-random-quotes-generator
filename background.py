@@ -1,10 +1,9 @@
 from PIL import Image,ImageFont,ImageDraw
 import random
-import requests
 import textwrap
 import json
 from wallpaper import set_wallpaper, get_wallpaper
-with open(r"F:\Python projects\Desktop Background\quotes.json") as file:
+with open("quotes.json") as file:
 	quotes = json.load(file)
 quote = random.choices(quotes)
 text = quote[0]['text']
